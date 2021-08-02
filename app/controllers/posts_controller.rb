@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   end
 
   def create
+    binding.pry
     Post.create(content: params[:content])
     redirect_to action: :index
   end
